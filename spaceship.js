@@ -31,12 +31,32 @@ console.log(spaceship2.launch())
 //()Task: Create spaceship using Constructor Function
 //<----------------Beginning of the Task---------------->
 //<----------------------------------------------------->
-
+var Spaceship3 = function(){
+    this.speed = Math.round(Math.random()*30 + 15)
+    this.name = 'Enterprise'
+    this.launch = function(){
+        console.log(this.name + ' launching to infinity and beyond at a top speed of ' + this.speed + 'lyph !')
+    }
+}
+var spaceship3 = new Spaceship3()
+spaceship3.launch()
 
 //<----------------End of Task-------------------------->
 
 //()Task: Create spaceship using class via ES6
 //<----------------Beginning of the Task---------------->
 //<----------------------------------------------------->
-
+class Spaceship {
+    constructor(speed, name){
+        this.speed = speed
+        this.name = name
+        this.launch
+        this.setLaunch = this.setLaunch.bind(this)
+    }
+    setLaunch(name, speed){
+        console.log(`${name} launching to infinity and beyond at a top speed of ${speed}lyph !`)
+    }
+}
+var spaceship4 = new Spaceship()
+console.log(spaceship4.setLaunch('Awesomeness...', 100))
 //<----------------End of Task-------------------------->

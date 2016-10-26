@@ -1,3 +1,6 @@
+$(document).ready(function(){
+    $(".col-sm-6").sparkle()
+})
 
 // 1. Make a class called Trailer that extends Movie
 class Trailer extends Movie {
