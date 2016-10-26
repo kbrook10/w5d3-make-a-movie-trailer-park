@@ -18,5 +18,5 @@ class Trailer extends Movie {
 
 var trailer1 = new Trailer('24K Magic','UqyT8IEBkvY')
 var trailer2 = new Trailer('Uptown Funk','OPf0YbXqDm0')
-var trailer3 = new Trailer('Bruno Mars - 24K Magic','UqyT8IEBkvY')
-var trailer4 = new Trailer('Bruno Mars - 24K Magic','UqyT8IEBkvY')
+var trailer3 = new Trailer('Treasure','nPvuNsRccVw')
+var trailer4 = new Trailer('The Lazy Song','fLexgOxsZu0')
