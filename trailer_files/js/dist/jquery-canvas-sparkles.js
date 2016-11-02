@@ -23,7 +23,7 @@ $(function() {
                 overlap: 0,
                 speed: 1,
                 minSize: 4,
-                maxSize: 7,
+                maxSize: 8,
                 direction: "both"
 
             }, options);
@@ -90,7 +90,7 @@ $(function() {
             // set up the canvas element as a document fragment
             // and give it a class and some css amd append it
             // to our parent element.
-            this.$canvas = 
+            this.$canvas =
                 $("<canvas>")
                     .addClass("sparkle-canvas")
                     .css( cssOpts )
@@ -351,8 +351,8 @@ $(function() {
 
         "resize": function($parent) {
 
-            // We set the width/height of the canvas upon mouseover 
-            // because of document-load issues with fonts and images and 
+            // We set the width/height of the canvas upon mouseover
+            // because of document-load issues with fonts and images and
             // other things changing dimentions of elements.
             this.canvas.width = $parent.outerWidth() + (this.options.overlap * 2);
             this.canvas.height = $parent.outerHeight() + (this.options.overlap * 2);
